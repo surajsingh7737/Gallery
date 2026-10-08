@@ -4,7 +4,7 @@ import { Heart, ImageOff } from 'lucide-react'
 /* Placeholder shown while a page is loading (same shape as a real card) */
 export const SkeletonCard = () => (
   <div className='overflow-hidden rounded-2xl bg-neutral-900 ring-1 ring-white/5'>
-    <div className='aspect-[4/3] animate-pulse bg-neutral-800' />
+    <div className='aspect-4/3 animate-pulse bg-neutral-800' />
     <div className='flex items-center gap-3 p-3'>
       <div className='h-9 w-9 animate-pulse rounded-full bg-neutral-800' />
       <div className='flex-1 space-y-2'>
@@ -30,7 +30,7 @@ const Card = ({ photo, isFavorite, onToggleFavorite, onOpen }) => {
         aria-label={`Open photo by ${photo.author}`}
         className='block w-full text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-amber-400'
       >
-        <div className='relative aspect-[4/3] overflow-hidden bg-neutral-800'>
+        <div className='relative aspect-4/3 overflow-hidden bg-neutral-800'>
           {failed ? (
             <div className='absolute inset-0 grid place-items-center text-gray-500'>
               <div className='flex flex-col items-center gap-1 text-xs'>
